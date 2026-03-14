@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/logo.png" width="180"/>
+  <img src="docs/bitnet-logo.png" width="180"/>
 </p>
 
 <h1 align="center">BitNet-1</h1>
