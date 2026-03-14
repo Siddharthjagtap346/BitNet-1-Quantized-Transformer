@@ -1,0 +1,91 @@
+# =========================
+# PYTHON CACHE / BYTECODE
+# =========================
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# =========================
+# NOTEBOOK CHECKPOINTS
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# VIRTUAL ENVIRONMENTS
+# =========================
+venv/
+.venv/
+env/
+ENV/
+
+# =========================
+# MODEL CHECKPOINTS / WEIGHTS
+# =========================
+*.pth
+*.pt
+*.ckpt
+*.bin
+
+checkpoints/
+models/
+weights/
+
+# =========================
+# DATASETS
+# =========================
+data/raw/
+data/processed/
+datasets/
+
+# =========================
+# LOG FILES
+# =========================
+*.log
+logs/
+
+# =========================
+# TEMP FILES
+# =========================
+tmp/
+temp/
+*.tmp
+
+# =========================
+# BUILD FILES
+# =========================
+build/
+dist/
+*.egg-info/
+
+# =========================
+# OS FILES
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDE FILES
+# =========================
+.vscode/
+.idea/
+*.swp
+
+# =========================
+# ENVIRONMENT VARIABLES
+# =========================
+.env
+.env.local
+
+# =========================
+# EXTRA FILES
+# =========================
+bitnet_complete.zip
+test.py
+test1.py
+
+# =========================
+# DATASETS (LARGE FILES)
+# =========================
+data/uniprot_annotations.tsv
+data/uniprot_sprot.fasta
