@@ -1,4 +1,25 @@
-# BitNet-1 Quantized Transformer for Protein Function Prediction
+<p align="center">
+  <img src="docs/logo.png" width="180"/>
+</p>
+
+<h1 align="center">BitNet-1</h1>
+
+<p align="center">
+Quantized Transformer for Protein Function Prediction
+</p>
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/Python-3.9+-blue?logo=python"/>
+<img src="https://img.shields.io/badge/PyTorch-Deep%20Learning-red?logo=pytorch"/>
+<img src="https://img.shields.io/badge/Transformer-BitNet%20Architecture-purple"/>
+<img src="https://img.shields.io/badge/Quantization-1--Bit%20Weights-orange"/>
+<img src="https://img.shields.io/badge/API-FastAPI-green?logo=fastapi"/>
+<img src="https://img.shields.io/badge/License-MIT-yellow"/>
+<img src="https://img.shields.io/badge/Research-AI%20Bioinformatics-blueviolet"/>
+<img src="https://img.shields.io/badge/Edge%20AI-Lightweight%20Model-success"/>
+
+</p>
 
 A research-oriented implementation of a **BitNet-inspired 1-bit Transformer** designed for **efficient protein sequence modeling and function prediction**.
 The system applies **quantization-aware techniques and binarized linear layers** to significantly reduce compute and memory requirements while maintaining meaningful prediction capability.
@@ -7,7 +28,7 @@ This project explores how **ultra-low-precision neural networks** can be used fo
 
 ---
 
-# Project Overview
+# 🧬 Project Overview
 
 Modern protein modeling systems require extremely large models and high compute.
 This project investigates whether **binarized transformer architectures** can perform meaningful biological sequence analysis while remaining lightweight enough for **edge hardware deployment**.
@@ -23,24 +44,25 @@ The goal is to demonstrate that **quantized transformer architectures can suppor
 
 ---
 
-# Key Features
+# ✨ Key Features
 
-• BitNet-style **1-bit quantized linear layers**
-• **Quantization-aware training (QAT)** pipeline
-• Multi-task prediction:
+• 🧠 BitNet-style **1-bit quantized linear layers**  
+• ⚙️ **Quantization-aware training (QAT)** pipeline  
+• 🔬 Multi-task biological prediction  
 
-* Protein Function
-* Protein Domains
-* Subcellular Localization
-* Gene Ontology (GO) terms
-  • **Transformer-based sequence modeling**
-  • Efficient inference with **KV caching**
-  • Interactive **FastAPI web interface**
-  • Designed with **edge AI deployment in mind**
+  - 🧬 Protein Function  
+  - 🧩 Protein Domains  
+  - 📍 Subcellular Localization  
+  - 🧾 Gene Ontology (GO) terms  
+
+• 🤖 **Transformer-based sequence modeling**  
+• ⚡ Efficient inference with **KV caching**  
+• 🌐 Interactive **FastAPI web interface**  
+• 📦 Designed for **edge AI deployment**
 
 ---
 
-# System Architecture
+# 🏗️ System Architecture
 
 The model follows a **Transformer decoder architecture with BitLinear layers** replacing traditional dense layers.
 
@@ -70,13 +92,15 @@ BitTransformer Blocks
 
 # Architecture Diagram
 
-<WhatsApp Image 2026-03-14 at 10.02.33 PM.jpeg>
+<p align="center">
+  <img src="docs/architecture.jpeg" width="700"/>
+</p>
 
 
 
 ---
 
-# Dataset
+# 📊 Dataset
 
 The model is trained using data derived from the **UniProt protein database**.
 
@@ -100,7 +124,7 @@ A protein containing a **kinase domain and ATP binding motif** is likely classif
 
 ---
 
-# Mathematical Model
+# 🧮 Mathematical Model
 
 ### BitLinear Layer
 
@@ -138,7 +162,7 @@ Gradients are approximated using the **Straight-Through Estimator (STE)**.
 
 ---
 
-# Model Implementation
+# 🧠 Model Implementation
 
 The implementation contains several core components.
 
@@ -178,18 +202,18 @@ This allows the model to learn **shared biological representations**.
 
 ---
 
-# Training Pipeline
+# ⚙️ Training Pipeline
 
 Training includes:
 
-1. Dataset loading from UniProt TSV
-2. Tokenization of protein sequences
-3. Batch padding and attention masking
-4. Transformer forward pass
-5. Multi-task loss computation
-6. Gradient clipping
-7. Learning rate scheduling
-8. Periodic checkpoint saving
+1️⃣ Dataset loading from UniProt TSV  
+2️⃣ Tokenization of protein sequences  
+3️⃣ Batch padding and attention masking  
+4️⃣ Transformer forward pass  
+5️⃣ Multi-task loss computation  
+6️⃣ Gradient clipping  
+7️⃣ Learning rate scheduling  
+8️⃣ Periodic checkpoint saving
 
 Loss function combines:
 
@@ -202,7 +226,7 @@ Token prediction loss
 
 ---
 
-# Training Logs
+# 📈 Training Logs
 
 Example training output:
 
@@ -210,14 +234,18 @@ Example training output:
 Epoch 1 | Step 50 | Total: 3.21 | Token: 2.84 | Func: 0.37
 Epoch 2 | Step 100 | Total: 2.98 | Token: 2.61 | Func: 0.36
 ```
-<Screenshot 2026-02-14 212437.png>
+<p align="center">
+  <img src="docs/training-log1.png" width="700"/>
+</p>
 
-<Screenshot 2026-02-14 212418.png>
+<p align="center">
+  <img src="docs/training-log2.png" width="700"/>
+</p>
 
 
 ---
 
-# Web Interface
+# 🌐 Web Interface
 
 The project includes a **FastAPI based inference dashboard**.
 
@@ -233,25 +261,29 @@ Features:
 
 ---
 
-# Output
+# 🔍 Output
 
-<WhatsApp Image 2026-02-17 at 10.13.12 PM.jpeg>
+<p align="center">
+  <img src="docs/ui.jpeg" width="750"/>
+</p>
 
-<WhatsApp Image 2026-02-17 at 10.13.12 PM (1).jpeg>
+<p align="center">
+  <img src="docs/UI-output.jpeg" width="750"/>
+</p>
 
 
 ---
 
-# Installation
+# 🛠 Installation
 
-Clone repository
+## 📥 Clone repository
 
 ```
 git clone https://github.com/Siddharthjagtap346/bitnet-1-quantized-transformer
 cd bitnet-1-quantized-transformer
 ```
 
-Install dependencies
+## 📦 Install dependencies
 
 ```
 pip install torch fastapi uvicorn
@@ -259,7 +291,7 @@ pip install torch fastapi uvicorn
 
 ---
 
-# Training
+# 🚀 Training
 
 Run training script
 
@@ -275,7 +307,7 @@ Model checkpoints will be saved in
 
 ---
 
-# Run Inference Dashboard
+# 💻 Run Inference Dashboard
 
 ```
 uvicorn webapp:app --reload
@@ -289,7 +321,7 @@ http://127.0.0.1:8000
 
 ---
 
-# Future Improvements
+# 🔮 Future Improvements
 
 • Larger protein datasets
 • Improved tokenization strategies
@@ -299,7 +331,7 @@ http://127.0.0.1:8000
 
 ---
 
-# Research Motivation
+# 🔬 Research Motivation
 
 This project explores the intersection of:
 
@@ -312,27 +344,28 @@ The work demonstrates how **low-precision architectures can enable biological se
 
 ---
 
-# Author
+# 👨‍💻 Author
 
 **Siddharth Jagtap**
 
-Computer Engineering Student
-Interested in:
+Computer Engineering Student  
 
-• Artificial Intelligence
-• Efficient Neural Networks
-• Blockchain Systems
-• Edge AI
+💡 Interests:
+
+• 🤖 Artificial Intelligence  
+• 🧠 Efficient Neural Networks  
+• ⛓ Blockchain Systems  
+• 📡 Edge AI
 
 ---
 
-# License
+# 📜 License
 
 MIT License
 
 ---
 
-# Acknowledgements
+# 🙏 Acknowledgements
 
 • PyTorch
 • UniProt protein database
